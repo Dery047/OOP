@@ -19,7 +19,6 @@ replay_pid*
 
 # ==========================================
 # 3. Configuraciones Locales y Seguridad (¡Sensible!)
-# ==========================================
 .env
 .env.local
 .env.*.local
