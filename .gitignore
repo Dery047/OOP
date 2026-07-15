@@ -1,24 +1,44 @@
-# Compiled class file
+# ==========================================
+# 1. Compilación y Salida (Java & Maven)
+# ==========================================
+target/
+out/
 *.class
 
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Archivos de depuración de fallos de la Máquina Virtual de Java
 hs_err_pid*
 replay_pid*
+
+# ==========================================
+# 2. IDE - IntelliJ IDEA
+# ==========================================
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# ==========================================
+# 3. Configuraciones Locales y Seguridad (¡Sensible!)
+# ==========================================
+.env
+.env.local
+.env.*.local
+
+# Certificados, llaves privadas y keystores de Java
+*.jks
+*.p12
+*.pem
+
+# ==========================================
+# 4. Archivos Temporales y Logs
+# ==========================================
+*.log
+*.temp
+*.tmp
+.metadata/
+
+# ==========================================
+# 5. Archivos del Sistema Operativo
+# ==========================================
+.DS_Store
+Thumbs.db
