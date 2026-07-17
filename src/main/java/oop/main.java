@@ -1,21 +1,17 @@
-package oop;
+package oop; // Asegúrate que este sea el paquete donde está tu Main
 
-import oop.model.Vuelo;
-import oop.service.gestorVuelos;
+import oop.service.gestorVuelos; // Importa tu servicio
+import oop.ui.Menu;              // Importa tu menú
 
 public class main {
     public static void main(String[] args) {
+        // 1. Creamos el gestor (el cerebro)
         gestorVuelos gestor = new gestorVuelos();
 
-        // Creamos objetos
-        Vuelo v1 = new Vuelo("AV123", "Medellín", 180);
-        Vuelo v2 = new Vuelo("LA456", "Bogotá", 200);
+        // 2. Creamos el menú y le inyectamos el gestor creado arriba
+        Menu menu = new Menu(gestor);
 
-        // Usamos la lógica
-        gestor.agregarVuelo(v1);
-        gestor.agregarVuelo(v2);
-
-        System.out.println("--- Lista de Vuelos ---");
-        gestor.listarVuelos();
+        // 3. Ejecutamos el registro
+        menu.ejecutarRegistro();
     }
 }
