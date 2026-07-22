@@ -1,7 +1,7 @@
-package oop; // Asegúrate que este sea el paquete donde está tu Main
+package oop;
 
-import oop.service.gestorVuelos; // Importa tu servicio
-import oop.ui.Menu;              // Importa tu menú
+import oop.service.gestorVuelos;
+import oop.ui.Menu;
 
 public class main {
     public static void main(String[] args) {
